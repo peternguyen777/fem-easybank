@@ -12,8 +12,8 @@ module.exports = {
         lg: "1440px",
       },
       colors: {
-        unfocussed: "#9597A5",
-        focussed: "#2D314D",
+        secondary: "#9597A5",
+        primary: "#2D314D",
       },
     },
   },

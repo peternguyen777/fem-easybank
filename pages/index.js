@@ -20,12 +20,12 @@ export default function Home() {
           />
         </div>
         <img src='/bg-intro-mobile.svg' alt='' className='w-screen ' />
-        <div className=' -translate-y-[38px]'>
+        <div className='-translate-y-[38px]'>
           <div className='mx-6 flex flex-col items-center'>
-            <h1 className='text-center  text-[40px] font-light leading-[47px] text-focussed'>
+            <h1 className='text-center  text-[40px] font-light leading-[47px] text-primary'>
               Next generation digital banking
             </h1>
-            <p className='mt-4 text-center text-[15px] font-light leading-[25px] text-unfocussed'>
+            <p className='mt-4 text-center text-[15px] font-light leading-[25px] text-secondary'>
               Take your financial life online. Your Easybnank account will be a
               one-stop-shop for spending, saving, budgeting, investing, and much
               more.
@@ -34,15 +34,56 @@ export default function Home() {
               Request Invite
             </button>
           </div>
-          <div className='bg-[#F4F5F7] px-6 text-center'>
-            <h2 className='pt-16 text-[32px] font-light leading-[38px] text-focussed'>
-              Why choose Easybank?
-            </h2>
-            <p className='mt-3.5 text-[15px] font-light leading-[25px] text-unfocussed'>
-              We leverage Open Banking to turn your bank account into your
-              financial hub. Control your finances like never before.
-            </p>
-            <img src='/icon-online.svg' alt='' className='mx-auto mt-14' />
+          <div className='bg-[#F4F5F7] px-6 py-16 text-center'>
+            <div>
+              <h2 className='text-[32px] font-light leading-[38px] text-primary'>
+                Why choose Easybank?
+              </h2>
+              <p className='mt-3.5 text-[15px] font-light leading-[25px] text-secondary'>
+                We leverage Open Banking to turn your bank account into your
+                financial hub. Control your finances like never before.
+              </p>
+            </div>
+            <div className='mt-14'>
+              <img src='/icon-online.svg' alt='' className='mx-auto' />
+              <h3 className='mt-6 text-[20px] leading-[28px] text-primary'>
+                Online Banking
+              </h3>
+              <p className='mt-4 text-[15px] font-light leading-[25px] text-secondary'>
+                Our modern web and mobile applications allow you to keep track
+                of your finances wherever you are in the world.
+              </p>
+            </div>
+            <div className='mt-14'>
+              <img src='/icon-budgeting.svg' alt='' className='mx-auto' />
+              <h3 className='mt-6 text-[20px] leading-[28px] text-primary'>
+                Simple Budgetting
+              </h3>
+              <p className='mt-4 text-[15px] font-light leading-[25px] text-secondary'>
+                See exactly where your money goes each month. Receive
+                notifications when you’re close to your hitting limits.
+              </p>
+            </div>
+            <div className='mt-14'>
+              <img src='/icon-onboarding.svg' alt='' className='mx-auto' />
+              <h3 className='mt-6 text-[20px] leading-[28px] text-primary'>
+                Fast Onboarding
+              </h3>
+              <p className='mt-4 text-[15px] font-light leading-[25px] text-secondary'>
+                We don’t do branches. Open your account in minutes online and
+                start taking control of your finances right away.
+              </p>
+            </div>
+            <div className='mt-14'>
+              <img src='/icon-api.svg' alt='' className='mx-auto' />
+              <h3 className='mt-6 text-[20px] leading-[28px] text-primary'>
+                Open API
+              </h3>
+              <p className='mt-4 text-[15px] font-light leading-[25px] text-secondary'>
+                Manage your savings, investments, pension, and much more from
+                one account. Tracking your money has never been easier.
+              </p>
+            </div>
           </div>
         </div>
       </main>
