@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React from "react";
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
 
       <Header />
-      <main className=' h-screen w-screen bg-[#fafafa] font-publicsans'>
+      <main className=' h-screen w-screen  font-publicsans'>
         <div className='absolute w-screen px-[14px]'>
           <img
             src='/image-mockups.png'
@@ -168,8 +168,8 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <Footer />
         </div>
-        {/* <Footer /> */}
       </main>
     </React.Fragment>
   );
