@@ -1,5 +1,8 @@
 import Head from "next/head";
 import React from "react";
+import EasybankArticles from "../components/EasybankArticles";
+import EasybankBody from "../components/EasybankBody";
+import EasybankIntro from "../components/EasybankIntro";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
@@ -21,153 +24,16 @@ export default function Home() {
             className='mx-auto -translate-y-[60px]'
           />
         </div>
-        <img src='/bg-intro-mobile.svg' alt='' className='w-screen ' />
+        <img src='/bg-intro-mobile.svg' alt='' className='w-screen sm:hidden' />
+        <img
+          src='/bg-intro-desktop.svg'
+          alt=''
+          className='hidden w-screen sm:inline-block'
+        />
         <div className='-translate-y-[38px]'>
-          <div className='mx-6 flex flex-col items-center'>
-            <h1 className='text-center  text-[40px] font-light leading-[47px] text-primary'>
-              Next generation digital banking
-            </h1>
-            <p className='mt-4 text-center text-[15px] font-light leading-[25px] text-secondary'>
-              Take your financial life online. Your Easybnank account will be a
-              one-stop-shop for spending, saving, budgeting, investing, and much
-              more.
-            </p>
-            <button className='mt-8 mb-[88px] h-[44px] w-[163px] rounded-full bg-gradient-to-br from-[#33D35E] to-[#2AB6D9] font-publicsans text-sm font-bold leading-[28px] text-white'>
-              Request Invite
-            </button>
-          </div>
-          <div className='bg-[#F4F5F7] px-6 py-16 text-center'>
-            <div>
-              <h2 className='text-[32px] font-light leading-[38px] text-primary'>
-                Why choose Easybank?
-              </h2>
-              <p className='mt-3.5 text-[15px] font-light leading-[25px] text-secondary'>
-                We leverage Open Banking to turn your bank account into your
-                financial hub. Control your finances like never before.
-              </p>
-            </div>
-            <div className='mt-14'>
-              <img src='/icon-online.svg' alt='' className='mx-auto' />
-              <h3 className='mt-6 text-[20px] leading-[28px] text-primary'>
-                Online Banking
-              </h3>
-              <p className='mt-4 text-[15px] font-light leading-[25px] text-secondary'>
-                Our modern web and mobile applications allow you to keep track
-                of your finances wherever you are in the world.
-              </p>
-            </div>
-            <div className='mt-14'>
-              <img src='/icon-budgeting.svg' alt='' className='mx-auto' />
-              <h3 className='mt-6 text-[20px] leading-[28px] text-primary'>
-                Simple Budgetting
-              </h3>
-              <p className='mt-4 text-[15px] font-light leading-[25px] text-secondary'>
-                See exactly where your money goes each month. Receive
-                notifications when you’re close to your hitting limits.
-              </p>
-            </div>
-            <div className='mt-14'>
-              <img src='/icon-onboarding.svg' alt='' className='mx-auto' />
-              <h3 className='mt-6 text-[20px] leading-[28px] text-primary'>
-                Fast Onboarding
-              </h3>
-              <p className='mt-4 text-[15px] font-light leading-[25px] text-secondary'>
-                We don’t do branches. Open your account in minutes online and
-                start taking control of your finances right away.
-              </p>
-            </div>
-            <div className='mt-14'>
-              <img src='/icon-api.svg' alt='' className='mx-auto' />
-              <h3 className='mt-6 text-[20px] leading-[28px] text-primary'>
-                Open API
-              </h3>
-              <p className='mt-4 text-[15px] font-light leading-[25px] text-secondary'>
-                Manage your savings, investments, pension, and much more from
-                one account. Tracking your money has never been easier.
-              </p>
-            </div>
-          </div>
-          <div className='bg-[#fafafa] py-[88px] text-center'>
-            <h2 className='pb-[30px] text-[32px] font-light leading-[38px] text-primary'>
-              Latest Articles
-            </h2>
-            <div className='text-top-sm mx-6 rounded-md bg-[#ffffff] text-left'>
-              <img src='/image-currency.jpg' alt='' className='rounded-t-md' />
-              <div className='px-[30px] py-6'>
-                <p className='text-[10px] font-normal leading-[18px] text-secondary'>
-                  By Claire Robinson
-                </p>
-                <div className='h-[120px]'>
-                  <p className='mt-2 text-[16px] font-light leading-[20px] text-primary'>
-                    Receive money in any currency with no fees
-                  </p>
-                  <p className='mt-2 text-[13px] font-light leading-[18px] text-secondary'>
-                    The world is getting smaller and we’re becoming more mobile.
-                    So why should you be forced to only receive money in a
-                    single …
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className='text-top-sm mx-6 mt-6 rounded-md bg-[#ffffff] text-left'>
-              <img
-                src='/image-restaurant.jpg'
-                alt=''
-                className='rounded-t-md'
-              />
-              <div className='px-[30px] py-6'>
-                <p className='text-[10px] font-normal leading-[18px] text-secondary'>
-                  By Wilson Hutton
-                </p>
-                <div className='h-[120px]'>
-                  <p className='mt-2 text-[16px] font-light leading-[20px] text-primary'>
-                    Treat yourself without worrying about money
-                  </p>
-                  <p className='mt-2 text-[13px] font-light leading-[18px] text-secondary'>
-                    Our simple budgeting feature allows you to separate out your
-                    spending and set realistic limits each month. That means you
-                    …
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className='text-top-sm mx-6 mt-6 rounded-md bg-[#ffffff] text-left'>
-              <img src='/image-plane.jpg' alt='' className='rounded-t-md' />
-              <div className='px-[30px] py-6'>
-                <p className='text-[10px] font-normal leading-[18px] text-secondary'>
-                  By Wilson Hutton
-                </p>
-                <div className='h-[120px]'>
-                  <p className='mt-2 text-[16px] font-light leading-[20px] text-primary'>
-                    Take your Easybank card wherever you go
-                  </p>
-                  <p className='mt-2 text-[13px] font-light leading-[18px] text-secondary'>
-                    We want you to enjoy your travels. This is why we don’t
-                    charge any fees on purchases while you’re abroad. We’ll even
-                    show you …
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className='text-top-sm mx-6 mt-6 rounded-md bg-[#ffffff] text-left'>
-              <img src='/image-confetti.jpg' alt='' className='rounded-t-md' />
-              <div className='px-[30px] py-6'>
-                <p className='text-[10px] font-normal leading-[18px] text-secondary'>
-                  By Claire Robinson
-                </p>
-                <div className='h-[120px]'>
-                  <p className='mt-2 text-[16px] font-light leading-[20px] text-primary'>
-                    Our invite-only Beta accounts are now live!
-                  </p>
-                  <p className='mt-2 text-[13px] font-light leading-[18px] text-secondary'>
-                    After a lot of hard work by the whole team, we’re excited to
-                    launch our closed beta. It’s easy to request an invite
-                    through the site ...
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <EasybankIntro />
+          <EasybankBody />
+          <EasybankArticles />
           <Footer />
         </div>
       </main>
