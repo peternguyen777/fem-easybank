@@ -2,7 +2,7 @@ import React from "react";
 
 const EasybankIntroDesktop = () => {
   return (
-    <div className='ml-[165px] hidden w-[447px] flex-col items-center md:absolute md:mt-[250px] md:mb-[170px] lg:inline-block'>
+    <div className='left-[165px] hidden w-[447px] flex-col items-center md:absolute md:mt-[250px] md:mb-[170px] lg:inline-block'>
       <h1 className='text-left text-[56px] font-light leading-[64px] text-primary'>
         Next generation digital banking
       </h1>

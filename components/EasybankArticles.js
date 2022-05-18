@@ -17,7 +17,7 @@ const EasybankArticles = () => {
             <p className='text-[10px] font-normal leading-[18px] text-secondary'>
               By Claire Robinson
             </p>
-            <div className='min-h-[120px]'>
+            <div className='md:min-h-[120px]'>
               <p className='mt-2 cursor-pointer text-[16px] font-light leading-[20px] text-primary hover:text-hover'>
                 Receive money in any currency with no fees
               </p>
@@ -39,7 +39,7 @@ const EasybankArticles = () => {
             <p className='text-[10px] font-normal leading-[18px] text-secondary'>
               By Wilson Hutton
             </p>
-            <div className='min-h-[120px]'>
+            <div className='md:min-h-[120px]'>
               <p className='mt-2 cursor-pointer text-[16px] font-light leading-[20px] text-primary hover:text-hover'>
                 Treat yourself without worrying about money
               </p>
@@ -60,7 +60,7 @@ const EasybankArticles = () => {
             <p className='text-[10px] font-normal leading-[18px] text-secondary'>
               By Wilson Hutton
             </p>
-            <div className='min-h-[120px]'>
+            <div className='md:min-h-[120px]'>
               <p className='mt-2 cursor-pointer text-[16px] font-light leading-[20px] text-primary hover:text-hover'>
                 Take your Easybank card wherever you go
               </p>
@@ -81,7 +81,7 @@ const EasybankArticles = () => {
             <p className='text-[10px] font-normal leading-[18px] text-secondary'>
               By Claire Robinson
             </p>
-            <div className='min-h-[120px] lg:h-auto'>
+            <div className='md:min-h-[120px] lg:h-auto'>
               <p className='mt-2 cursor-pointer text-[16px] font-light leading-[20px] text-primary hover:text-hover'>
                 Our invite-only Beta accounts are now live!
               </p>
