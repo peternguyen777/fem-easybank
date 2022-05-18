@@ -3,11 +3,11 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className='flex w-screen flex-col items-center bg-primary py-[40px] lg:flex-row lg:items-start lg:justify-between lg:px-[165px] lg:py-12'>
-      <div className='flex flex-col lg:flex-row'>
-        <div className='flex flex-col items-center lg:h-[95px] lg:w-[285px] lg:items-start lg:justify-between'>
+    <footer className='flex w-screen flex-col items-center bg-primary py-[40px] md:flex-row md:items-start md:justify-between md:px-[165px] md:py-12'>
+      <div className='flex flex-col md:flex-row'>
+        <div className='flex flex-col items-center md:h-[95px] md:w-[285px] md:items-start md:justify-between'>
           <img src='/logo-whitebg.svg' alt='' />
-          <div className='my-8 flex flex-row space-x-4 lg:my-0'>
+          <div className='my-8 flex flex-row space-x-4 md:my-0'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               width='20'
@@ -48,15 +48,10 @@ const Footer = () => {
             >
               <path d='M10.333 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.976 1.409 4.1 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.058 4.042-.124 2.687-1.386 3.975-4.099 4.099-1.055.048-1.37.058-4.042.058-2.67 0-2.986-.01-4.04-.058-2.717-.124-3.976-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zm0-1.802C7.618 0 7.278.012 6.211.06 2.579.227.56 2.242.394 5.877.345 6.944.334 7.284.334 10s.011 3.057.06 4.123c.166 3.632 2.181 5.65 5.816 5.817 1.068.048 1.408.06 4.123.06 2.716 0 3.057-.012 4.124-.06 3.628-.167 5.651-2.182 5.816-5.817.049-1.066.06-1.407.06-4.123s-.011-3.056-.06-4.122C20.11 2.249 18.093.228 14.458.06 13.39.01 13.049 0 10.333 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.339-9.87a1.2 1.2 0 10-.001 2.4 1.2 1.2 0 000-2.4z' />
             </svg>
-
-            {/* <img src='/icon-youtube.svg' alt='' />
-            <img src='/icon-twitter.svg' alt='' />
-            <img src='/icon-pinterest.svg' alt='' />
-            <img src='/icon-instagram.svg' alt='' /> */}
           </div>
         </div>
-        <div className='text-[15px] font-light leading-[26px] lg:flex'>
-          <div className='lg: flex flex-col items-center space-y-2 lg:w-[160px] lg:items-start'>
+        <div className='text-[15px] font-light leading-[26px] md:flex'>
+          <div className='flex flex-col items-center space-y-2 md:w-[160px] md:items-start'>
             <Link href='/'>
               <a className='text-white hover:text-hover'>About Us</a>
             </Link>
@@ -67,7 +62,7 @@ const Footer = () => {
               <a className='text-white hover:text-hover'>Blog</a>
             </Link>
           </div>
-          <div className='mt-2 flex flex-col items-center space-y-2 lg:mt-0 lg:w-[160px] lg:items-start'>
+          <div className='mt-2 flex flex-col items-center space-y-2 md:mt-0 md:w-[160px] md:items-start'>
             <Link href='/'>
               <a className='text-white hover:text-hover'>Careers</a>
             </Link>
@@ -80,8 +75,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className='flex flex-col items-center lg:items-end'>
-        <button className='mt-8 h-[44px] w-[163px] rounded-full bg-gradient-to-br from-[#33D35E] to-[#2AB6D9] font-publicsans text-sm font-bold leading-none text-white lg:mt-0'>
+      <div className='hidden flex-col items-center md:items-end lg:flex'>
+        <button className='mt-8 h-[44px] w-[163px] rounded-full bg-gradient-to-br from-[#33D35E] to-[#2AB6D9] font-publicsans text-sm font-bold leading-none text-white hover:opacity-60 md:mt-0'>
           Request Invite
         </button>
         <p className='mt-6 text-[15px] leading-[26px] text-secondary'>

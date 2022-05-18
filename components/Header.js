@@ -15,7 +15,6 @@ const Header = () => {
           <Link href='/'>
             <a className='cursor-pointer font-medium text-secondary hover:text-primary'>
               Home
-              {/* <div className='relative hidden h-[4px] w-auto translate-y-8 bg-gradient-to-br from-[#33D35E] to-[#2AB6D9] lg:flex' /> */}
             </a>
           </Link>
           <Link href='/'>
@@ -39,7 +38,7 @@ const Header = () => {
             </a>
           </Link>
         </nav>
-        <button className='hidden h-[44px] w-[163px] rounded-full bg-gradient-to-br from-[#33D35E] to-[#2AB6D9] font-publicsans text-sm font-bold leading-none text-white md:inline-block'>
+        <button className='hidden h-[44px] w-[163px] rounded-full bg-gradient-to-br from-[#33D35E] to-[#2AB6D9] font-publicsans text-sm font-bold leading-none text-white hover:opacity-70 md:inline-block'>
           Request Invite
         </button>
       </div>
