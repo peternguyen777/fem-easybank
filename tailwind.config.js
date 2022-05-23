@@ -8,9 +8,9 @@ module.exports = {
       fontFamily: {
         publicsans: ["Public Sans", "sans-serif"],
       },
-      screens: {
-        lg: "1440px",
-      },
+      // screens: {
+      //   lg: "1440px",
+      // },
       colors: {
         secondary: "#9597A5",
         primary: "#2D314D",
