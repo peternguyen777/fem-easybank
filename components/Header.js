@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   const [homeHover, setHomeHover] = useState(false);
@@ -7,6 +8,7 @@ const Header = () => {
   const [contactHover, setContactHover] = useState(false);
   const [blogHover, setBlogHover] = useState(false);
   const [careersHover, setCareersHover] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState(false);
 
   const headerMouseOverHandler = (event) => {
     const onKey = event.target.innerHTML;
@@ -40,15 +42,37 @@ const Header = () => {
     }
   };
 
+  const menuOnClickHandler = () => {
+    setMobileMenu(true);
+  };
+
+  const menuOffClickHandler = () => {
+    setMobileMenu(false);
+  };
+
   return (
-    <header className='fixed z-30 flex h-16 w-screen items-center bg-white md:h-20'>
-      <div className='mx-[24px] flex w-screen items-center justify-between md:mx-[165px]'>
+    // <header className='fixed z-30 flex h-16 w-screen items-center bg-white md:h-20'>
+    // <div className='z-40 mx-[24px] flex w-screen items-center justify-between md:mx-[165px]'>
+
+    <header className='fixed z-30 w-full bg-white'>
+      <div className='mx-6 flex h-16 items-center justify-between md:mx-[165px] md:h-20'>
         <img src='/logo.svg' alt='' className='h-[20px] w-[139px]' />
-        <img
-          src='/icon-hamburger.svg'
-          alt=''
-          className='h-[11px] w-[24px] md:hidden'
-        />
+        {mobileMenu ? (
+          <img
+            src='/icon-close.svg'
+            alt=''
+            className='h-[18px] w-[19px] md:hidden'
+            onClick={menuOffClickHandler}
+          />
+        ) : (
+          <img
+            src='/icon-hamburger.svg'
+            alt=''
+            className='h-[11px] w-[24px] md:hidden'
+            onClick={menuOnClickHandler}
+          />
+        )}
+
         <nav className='relative hidden items-center space-x-[30px] font-publicsans leading-none lg:flex'>
           <div className='relative flex h-20 items-center'>
             <Link href='/'>
@@ -133,6 +157,18 @@ const Header = () => {
           Request Invite
         </button>
       </div>
+
+      {mobileMenu && (
+        <div className='absolute top-[88px] w-full sm:hidden'>
+          <MobileMenu />
+        </div>
+      )}
+      {mobileMenu && (
+        <div
+          className='absolute z-10 h-[667px] w-full bg-gradient-to-b from-primary to-transparent sm:hidden'
+          onClick={menuOffClickHandler}
+        />
+      )}
     </header>
   );
 };
